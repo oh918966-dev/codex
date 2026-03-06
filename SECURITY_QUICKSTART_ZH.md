@@ -44,7 +44,21 @@ Pass conditions:
 - Paper trading mode enabled (for trial stage)
 - No obvious secrets in tracked files
 
-## 5. Go-live gate (before real money)
+## 5. Red-team drill after deployment
+
+Run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\red-team-drill.ps1
+```
+
+Expected:
+
+- Malicious scenarios are `ABORTED`
+- Safe control scenario is `ALLOWED`
+- Any mismatch blocks release
+
+## 6. Go-live gate (before real money)
 
 Only switch to real trading when all are true:
 
@@ -53,7 +67,7 @@ Only switch to real trading when all are true:
 3. You can manually stop bot and cancel all orders quickly.
 4. You understand max potential loss for one day.
 
-## 6. What this guide does not cover
+## 7. What this guide does not cover
 
 - Smart contract audit
 - On-chain MEV protection

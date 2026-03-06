@@ -13,3 +13,5 @@ A starter repository initialized with Codex.
 - Quick guide (Chinese): `SECURITY_QUICKSTART_ZH.md`
 - Baseline template: `config/security-baseline.example.json`
 - Daily check script (PowerShell): `scripts/daily-security-check.ps1`
+- Red-team drill guide: `RED_TEAM_DRILL_GUIDE.md`
+- Red-team drill runner: `scripts/red-team-drill.ps1`
